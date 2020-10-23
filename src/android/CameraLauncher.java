@@ -474,6 +474,10 @@ public class CameraLauncher extends CordovaPlugin implements MediaScannerConnect
                 this.croppedFilePath :
                 this.imageFilePath;
 
+        if(sourcePath == null){
+            this.callbackContext.error("camera returned null");
+            throw new IOException("camera returned null");
+        }
 
         if (this.encodingType == JPEG) {
             try {

@@ -1,6 +1,7 @@
 ---
 title: Camera
 description: Take pictures with the device camera.
+fork-reason: Handling random crashes in app when taking pictures on Samsung A-10, which now returns an error
 ---
 <!---
 # license: Licensed to the Apache Software Foundation (ASF) under one
@@ -20,6 +21,8 @@ description: Take pictures with the device camera.
 #         specific language governing permissions and limitations
 #         under the License.
 -->
+
+Check the [original repository](https://github.com/apache/cordova-plugin-camera) for official updates
 
 |AppVeyor|Travis CI|
 |:-:|:-:|
@@ -41,6 +44,11 @@ Although the object is attached to the global scoped `navigator`, it is not avai
 ## Installation
 
 This requires cordova 5.0+
+
+To install this respository
+
+    cordova plugin add https://github.com/JSilva6/cordova-plugin-camera-1.git
+To install the official released version
 
     cordova plugin add cordova-plugin-camera
 Older versions of cordova can still install via the __deprecated__ id
